@@ -1,0 +1,119 @@
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+body {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position-x: -150px;
+    background-position-y: -100px;
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+
+/*Container Login*/
+
+#login-container {
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/*Formulario*/
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+label {
+    font-weight: bold;
+}
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+input:focus {
+    border-bottom: 2px solid #085588;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #085588;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #1B223C;
+    transition: .5s;
+}
+
+.modal-overlay-cad {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 999;
+}
+
+.modal-overlay-cad.active {
+	opacity: 1;
+	visibility: visible;
+}
+.modal {
+	background: #f0f2f5;
+	padding: 2.4rem;
+	border-radius: 0.25rem;
+	position: relative;
+	z-index: 1;
+}
+
+.modal a {
+    padding: 9px;
+    margin: 70px;
+    font-size: 1rem;
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #b22222;
+    cursor: pointer;
+    text-decoration: none;
+}
+.modal a:hover {
+    background-color: #8b0000;
+    transition: .5s;
+}

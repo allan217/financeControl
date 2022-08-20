@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../login/login.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Login</h1>
+        <form action="" method="POST" id="login_form">
+            <label for="login_email">E-mail</label>
+            <input type="email" name="login_email" id="login_email" placeholder="Digite seu e-mail" autocomplet="off">
+
+            <label for="login_password">Senha</label>
+            <input type="password" name="login_password" id="login_password" placeholder="Digite sua senha">
+            <input onclick="loginForm.submit()" type="submit" value="login">
+        </form>
+        <a href="#" onclick="modalCad.open()">Cadastre-se</a>
+    </div>
+
+    <div class="modal-overlay-cad">
+        <div class="modal">
+                <h1>Cadastro</h1>
+            <form action="" method="POST" id="cad_form">
+                <label for="cad_name">Nome Completo</label>
+                <input type="name" name="cad_name" id="cad_name" placeholder="Digite seu nome" >
+
+                <label for="cad_email">E-mail</label>
+                <input type="email" name="cad_email" id="cad_email" placeholder="Digite seu e-mail" autocomplet="off">
+
+                <label for="cad_password">Senha</label>
+                <input type="password" name="cad_password" id="cad_password" placeholder="Digite sua senha">
+
+                <input type="submit" value="Salvar">
+            </form>
+        <a href="#" onclick="modalCad.close()" class="buttonCancel">Cancelar</a>
+        </div>
+    </div>
+    <script src="../login/login.js"></script>
+    <script src="../login/sessao.js"></script>
+</body>
+</html>

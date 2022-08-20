@@ -1,0 +1,26 @@
+{
+  "name": "Financeiro",
+  "version": "1.0.0",
+  "description": "![tela-login](https://user-images.githubusercontent.com/73024275/107808637-ad730000-6d48-11eb-83ec-37f319f0db11.png)",
+  "main": "script.js",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eletron": "0.0.1-security"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allan217/Maratona-Discovery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allan217/Maratona-Discovery/issues"
+  },
+  "homepage": "https://github.com/allan217/Maratona-Discovery#readme"
+}
